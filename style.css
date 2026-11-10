@@ -264,3 +264,19 @@ body.dark-mode .resume-button {
 .resume-button:hover {
     background-color: #22223b;
 }
+
+.resume-button {
+    background-color: #173653;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #285780;
+    transform: translateY(-2px);
+}

@@ -151,23 +151,48 @@ body.dark-mode .skill {
 
 @media screen and (max-width: 768px) {
 
-    nav {
-        flex-direction: column;
-        gap: 12px;
-        padding: 15px;
-    }
+    
 
-    nav a {
-        margin: 5px;
-    }
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 15px;
+}
+
+nav h2 {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0 10px;
+    font-size: 22px;
+}
+
+nav a {
+    margin: 4px;
+    padding: 6px;
+    font-size: 15px;
+}
+
+nav button {
+    margin: 4px;
+}
+
 
     section {
         padding: 45px 6%;
     }
 
     #home {
-        padding: 70px 6%;
-    }
+    padding: 60px 20px;
+}
+#about {
+    padding: 25px 20px;
+    margin: 15px;
+    border-radius: 18px;
+}
 
     h1 {
         font-size: 28px;
@@ -190,10 +215,22 @@ body.dark-mode .skill {
     .skill {
         padding: 10px 16px;
     }
+#skills {
+    margin-top: 25px;
+    padding-top: 20px;
+}
 
     #theme-toggle {
         margin-top: 8px;
     }
+   #contact {
+    padding: 10px 20px;
+}
+
+#resume {
+    padding: 20px 10px;
+    margin-top: 10px;
+}
 }
 /* Footer */
 footer {
@@ -225,53 +262,24 @@ body.dark-mode footer {
 body.dark-mode #contact a {
     color: #d8b4fe;
 }
+
 /* Resume Section */
 .resume-section {
     text-align: center;
-    padding: 35px 15px;
+    padding: 25px 15px;
 }
 
 .resume-button {
     display: inline-block;
-    background-color: #4a4e69;
-    color: white;
-    padding: 12px 25px;
-    margin-top: 15px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.resume-button:hover {
-    background-color: #22223b;
-}
-
-body.dark-mode .resume-button {
-    background-color: #65558f;
-}
-/* Resume Button */
-.resume-button {
-    display: inline-block;
-    background-color: #4a4e69;
-    color: white;
-    padding: 12px 25px;
-    margin-top: 15px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.resume-button:hover {
-    background-color: #22223b;
-}
-
-.resume-button {
     background-color: #173653;
-    color: white;
+    color: #ffffff;
     padding: 12px 24px;
+    margin-top: 15px;
     border: none;
-    border-radius: 8px;
+    border-radius: 25px;
     font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -280,3 +288,40 @@ body.dark-mode .resume-button {
     background-color: #285780;
     transform: translateY(-2px);
 }
+
+body.dark-mode .resume-button {
+    background-color: #65558f;
+    color: #ffffff;
+}
+
+/* Fix Resume Button Text Colour */
+#contact a.resume-button {
+    color: #ffffff !important;
+}
+
+#contact a.resume-button:hover {
+    color: #ffffff !important;
+}
+
+/* Desktop Layout Improvements */
+@media screen and (min-width: 769px) {
+
+    #contact {
+        padding: 40px 6%;
+        text-align: center;
+    }
+
+    #contact p {
+        margin: 12px 0;
+    }
+
+    .resume-section {
+        padding: 35px 20px;
+        text-align: center;
+    }
+    #about {
+    text-align: center;
+}
+
+}
+
